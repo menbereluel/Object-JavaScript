@@ -60,8 +60,16 @@ this.ingredients.forEach(ingredient=>console.log(`${ingredient}`))
 const myRecipe = new Recipe ("Pasta",["Pasta","Tomato Sauce","Cheese"],25);
 myRecipe.displayRecipe();
 console.log(myRecipe.isQuickMeal());
-//3
-// create a Playlist object with:
+//3 Create a Car object with:
+//model,mileage,serviceHistory(list of dates)
+//Define method addService(date):
+//Add date to serviceHistory list
+//Define method lastServiceDate():
+//If serviceHistory is empty:
+//Return "No service records"
+//Else return the last date in serviceHistory
+
+
 const Car = {
     model:"Toyota Corolla",
     mileage:50000,
@@ -78,7 +86,17 @@ const Car = {
 };
 Car.addService("2024-05-23");
 console.log("Last Service Date: ",Car.lastServiceDate());
-//4
+//4// create a Playlist object with:
+//songs(list of song titles)
+//Define method addSong(title)
+//Add title to songs list
+//Define method removeSong(title)
+//Find index of title in songs
+//If found, remove it from songs list
+//Define method listSongs();
+//For each song in songs list
+//Print song
+
 
 const Playlist ={
     songs:["alone","hello","sorry"],
@@ -110,8 +128,7 @@ Playlist.listSongs();
 //Define method getProgress():
 //Return "number of completed"as a string
 //Create a new Course object 
-// //Use markComplete() to complete some lessons
-//use getProgress(to see how many lessons are completed )
+
 
 function Course(title,lessons){
     this.title=title;
